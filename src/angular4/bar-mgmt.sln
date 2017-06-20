@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "web", "web.csproj", "{0F1845DB-9E63-4AAD-B8A2-09A65ADFF4D2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "db-migrator", "..\db-migrator\db-migrator.csproj", "{9BB3AF39-DAE0-454D-BED9-33E8F3148469}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{0F1845DB-9E63-4AAD-B8A2-09A65ADFF4D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F1845DB-9E63-4AAD-B8A2-09A65ADFF4D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F1845DB-9E63-4AAD-B8A2-09A65ADFF4D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BB3AF39-DAE0-454D-BED9-33E8F3148469}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BB3AF39-DAE0-454D-BED9-33E8F3148469}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BB3AF39-DAE0-454D-BED9-33E8F3148469}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BB3AF39-DAE0-454D-BED9-33E8F3148469}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
