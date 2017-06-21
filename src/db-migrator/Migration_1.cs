@@ -1,9 +1,4 @@
 ﻿using FluentMigrator;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace db_migrator
 {
@@ -11,11 +6,13 @@ namespace db_migrator
     /// First migration for creating the database
     /// </summary>
     [Migration(1)]
-    public class Migration_1 : FluentMigrator.ForwardOnlyMigration
+    public class Migration_1 : ForwardOnlyMigration
     {
         public override void Up()
         {
-            throw new NotImplementedException();
+            Create.Table("Bar")
+                .WithColumn("BarId").AsGuid().PrimaryKey()
+                .WithColumn("Name").AsString(255);
         }
     }
 }
