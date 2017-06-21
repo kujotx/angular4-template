@@ -18,4 +18,4 @@ build:
   verbosity: normal
 
 before_build:
-  - nuget restore
+  - nuget restore src\bar-mgmt.sln
