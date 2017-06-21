@@ -1,0 +1,23 @@
+
+# version format
+version: 1.0.{build}
+
+# Maximum number of concurrent jobs for the project
+max_jobs: 1
+
+services:
+  - mssql2014           # start SQL Server 2014 Express
+
+# build platform, i.e. x86, x64, Any CPU. This setting is optional.
+platform: X64
+
+configuration:
+  - Release
+  
+build:
+  parallel: true                  # enable MSBuild parallel builds
+  project: src\bar-mgmt.sln      # path to Visual Studio solution or project
+
+  # MSBuild verbosity level
+  verbosity: normal
+
